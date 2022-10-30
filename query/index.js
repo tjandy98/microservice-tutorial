@@ -41,7 +41,7 @@ app.get("/posts", (req, res) => {
 app.post("/events", (req, res) => {
     const { type, data } = req.body;
 
-    handleEvent(tye, data);
+    handleEvent(type, data);
 
     res.send({});
 });
@@ -50,7 +50,7 @@ app.listen(4002, async () => {
     console.log("Listening on port 4002");
 
     // retrieve events not handled during downtime 
-    const res = await axios.get("http://localhost:4005/events");
+    const res = await axios.get("http://event-bus-svc:4005/events");
 
     for (let event of res.data) {
         console.log("Processing event: ", event.type);
