@@ -14,7 +14,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: posts-clusterip-svc
+                name: posts-svc
                 port:
                   number: 4000
           - path: /posts
