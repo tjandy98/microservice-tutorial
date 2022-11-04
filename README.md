@@ -1,7 +1,7 @@
 ## About
 
 Mini-project to learn & explore microservice architecture.
-Each component is built from scratch e.g instead of using existing event bus, a custom event bus is developed to better understand and appreciate how it works.
+Each component is built from scratch e.g instead of using existing event bus, a custom (minimal) event bus is developed to better understand and appreciate how it works.
 
 ## Technologies
 
